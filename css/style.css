@@ -163,3 +163,32 @@ h1{
   color: var(--muted);
   margin-top:2px;
 }
+
+
+/* Sección de redes */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin: 18px 0 10px;
+}
+
+.social-link {
+  font-size: 28px;
+  color: var(--brand-orange);
+  background: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s ease, color .2s ease, transform .08s ease;
+  box-shadow: 0 4px 10px rgba(15,45,74,.12);
+}
+
+.social-link:hover {
+  background: var(--brand-orange);
+  color: #fff;
+  transform: translateY(-3px);
+}
