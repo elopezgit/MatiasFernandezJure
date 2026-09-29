@@ -3,67 +3,247 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Matías Jure</title>
+  <title>Matías Fernández Jure | CEO & Owner Jure Travel</title>
+  <meta name="description" content="Tarjeta digital de presentación ejecutiva de Matías Javier Fernández Jure - CEO & Owner de Jure Travel. Turismo de alta gama y experiencias de viaje exclusivas." />
+  
+  <!-- Open Graph & Meta tags -->
+  <meta property="og:title" content="Matías Javier Fernández Jure | Jure Travel" />
+  <meta property="og:description" content="Executive MBA · CEO & Owner de Jure Travel" />
+  <meta property="og:image" content="img/perfil2.jfif" />
+  <meta property="og:type" content="profile" />
+  <meta name="theme-color" content="#070d18" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- QRCode.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-  <main class="wrap">
-    <div class="brand">
-      <img src="img/logo.jfif" alt="Jure Travel" class="brand-logo" />
-      <div class="brand-accent"></div>
+
+  <!-- Ambient Glowing Aurora Mesh Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Splash Screen / Intro Slash Reveal -->
+  <div class="splash-screen" id="splashScreen" role="dialog" aria-label="Pantalla de bienvenida">
+    <div class="splash-content">
+      <div class="splash-logo-container">
+        <img src="img/logo.jfif" alt="Jure Travel Logo" class="splash-logo" />
+      </div>
+      <h2 class="splash-title">Jure Travel</h2>
+      <p class="splash-subtitle">Executive Presence</p>
+      <div class="splash-loader-bar">
+        <div class="splash-loader-fill"></div>
+      </div>
+      <span class="splash-tap-hint" id="splashEnterBtn"><i class="fa-solid fa-arrow-pointer"></i> Toca para ingresar</span>
     </div>
+  </div>
 
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper" id="mainContent">
+    <div class="glass-card-container">
+      
+      <!-- Top Brand Header Bar -->
+      <header class="brand-header">
+        <div class="brand-badge">
+          <img src="img/logo.jfif" alt="Jure Travel" />
+          <span>JURE TRAVEL</span>
+        </div>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span>Disponible VIP</span>
+        </div>
+      </header>
 
-    
+      <!-- Glassmorphic Executive Card -->
+      <article class="glass-card">
+        
+        <!-- Avatar Section with Rotating Gradient Aura & VIP Badge -->
+        <div class="avatar-section">
+          <div class="avatar-wrapper">
+            <img src="img/perfil2.jfif" alt="Matías Javier Fernández Jure" class="avatar-img" />
+          </div>
+          <div class="verified-badge" title="Verificado Oficial">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="img/perfil2.jfif" alt="Foto profesional" class="avatar" />
+        <!-- Identity & Role -->
+        <h1 class="profile-name">Matías Javier Fernández Jure</h1>
+        
+        <div class="profile-role-container">
+          <i class="fa-solid fa-crown" style="color: var(--brand-orange); font-size: 13px;"></i>
+          <span class="profile-role">CEO & OWNER de <strong>Jure Travel</strong></span>
+        </div>
 
-      <h1>Matías Javier Fernández Jure</h1>
-      <p class="sub">Executive MBA<br> CUIL: 20-32460762-6</p>
-      <p class="role">CEO & OWNER  de <strong>Jure Travel</strong></p>
-    
-<a class="btn btn-primary" href="https://wa.me/5493812061066?text=%F0%9F%99%8C%20%C2%A1Bienvenido%20a%20Jure%20Travel!%0ADecinos%20tu%20consulta%20o%20cu%C3%A1l%20ser%C3%ADa%20tu%20destino%20so%C3%B1ado%20%F0%9F%97%BA%EF%B8%8F%E2%9C%A8.%0ANosotros%20nos%20encargamos%20de%20que%20el%20viaje%20empiece%20con%20la%20mejor%20energ%C3%ADa%20%F0%9F%9A%80." target="_blank" rel="noopener">
-  <i class="fab fa-whatsapp"></i> WhatsApp
-</a>
+        <div class="profile-tags">
+          <span class="tag-pill"><i class="fa-solid fa-graduation-cap"></i> Executive MBA</span>
+          <span class="tag-pill"><i class="fa-solid fa-id-card"></i> CUIL: 20-32460762-6</span>
+          <span class="tag-pill"><i class="fa-solid fa-plane-departure"></i> Turismo Exclusivo</span>
+        </div>
 
+        <!-- Quick Primary Action Grid -->
+        <div class="hero-actions-grid">
+          <a class="action-card-btn primary-action" href="https://wa.me/5493812061066?text=%F0%9F%99%8C%20%C2%A1Bienvenido%20a%20Jure%20Travel!%0ADecinos%20tu%20consulta%20o%20cu%C3%A1l%20ser%C3%ADa%20tu%20destino%20so%C3%B1ado%20%F0%9F%97%BA%EF%B8%8F%E2%9C%A8.%0ANosotros%20nos%20encargamos%20de%20que%20el%20viaje%20empiece%20con%20la%20mejor%20energ%C3%ADa%20%F0%9F%9A%80." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
 
-<a class="btn btn-outline web-btn" href="https://juretravel.netlify.app/" target="_blank" rel="noopener">
-  🌐 Ir a Jure Travel
-</a>
+          <button class="action-card-btn save-contact" id="saveContactBtn" type="button">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Guardar Contacto</span>
+          </button>
 
-<a class="btn btn-outline" href="https://www.instagram.com/traveljure?igsh=bnVraWZ1OGF2MHY2" target="_blank" rel="noopener">
-  <i class="fab fa-instagram"></i> Instagram
-</a>
+          <button class="action-card-btn" id="openQrBtn" type="button">
+            <i class="fa-solid fa-qrcode"></i>
+            <span>Ver QR / Compartir</span>
+          </button>
+        </div>
 
-<a class="btn btn-outline" href="https://www.facebook.com/share/16KJGQxMKy/?mibextid=wwXIfr" target="_blank" rel="noopener">
-  <i class="fab fa-facebook"></i> Facebook
-</a>
+        <!-- Navigation Hub / Glass Links -->
+        <div class="links-section">
+          <div class="section-label">Canales Directos</div>
 
+          <!-- Official Website -->
+          <a class="glass-link-item" href="https://juretravel.netlify.app/" target="_blank" rel="noopener">
+            <div class="link-left">
+              <div class="icon-box web">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="link-info">
+                <span class="link-title">Sitio Oficial Jure Travel <span class="badge-featured">Destinos</span></span>
+                <span class="link-desc">Explora nuestros paquetes y experiencias</span>
+              </div>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+          </a>
 
+          <!-- Direct Call -->
+          <a class="glass-link-item" href="tel:+5493812061066">
+            <div class="link-left">
+              <div class="icon-box phone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="link-info">
+                <span class="link-title">Llamada Directa / Agendar</span>
+                <span class="link-desc">+54 9 381 206-1066</span>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right link-arrow"></i>
+          </a>
 
-     <a class="btn btn-outline" href="mailto:matias@juretravel.com" target="_blank" rel="noopener">
-  <i class="fas fa-envelope"></i> Email
-</a>
+          <!-- Corporate Email with Quick Copy Button -->
+          <a class="glass-link-item" href="mailto:matias@juretravel.com" target="_blank" rel="noopener" id="emailLink">
+            <div class="link-left">
+              <div class="icon-box mail">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="link-info">
+                <span class="link-title">Correo Corporativo</span>
+                <span class="link-desc">matias@juretravel.com</span>
+              </div>
+            </div>
+            <button class="dock-btn" id="copyEmailBtn" title="Copiar email" type="button" style="padding: 6px 10px; font-size: 11px;">
+              <i class="fa-regular fa-copy"></i> Copiar
+            </button>
+          </a>
 
+          <!-- Social Networks & Professional Channels -->
+          <div class="section-label">Presencia Digital & Redes</div>
 
-          <a class="btn btn-outline" href="tel:+5493812061066">
-        <i class="fas fa-phone"></i> Llamar / Agendar
-      </a>
+          <div class="socials-grid">
+            <a class="social-glass-card ig" href="https://www.instagram.com/traveljure?igsh=bnVraWZ1OGF2MHY2" target="_blank" rel="noopener" title="Instagram Jure Travel">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
 
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mfjure9/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+            <a class="social-glass-card fb" href="https://www.facebook.com/share/16KJGQxMKy/?mibextid=wwXIfr" target="_blank" rel="noopener" title="Facebook Jure Travel">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
 
+            <a class="social-glass-card li" href="https://www.linkedin.com/in/mfjure9/" target="_blank" rel="noopener" title="LinkedIn Matías Jure">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Footer signature -->
+        <footer class="card-footer">
+          <div class="brand-signature">
+            <span>JURE TRAVEL</span> · Executive Suite
+          </div>
+          <div class="credit">
+            © T-laser
+          </div>
+        </footer>
+
+      </article>
     </div>
-
-
-
-
-    <footer class="foot">
-      <span>©T-laser</span>
-    </footer>
   </main>
+
+  <!-- Bottom Floating Dock -->
+  <aside class="floating-dock">
+    <button class="dock-btn highlight" id="saveContactFloating" type="button">
+      <i class="fa-solid fa-address-book"></i>
+      <span>Guardar</span>
+    </button>
+    <a class="dock-btn" href="https://wa.me/5493812061066" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+      <span>WhatsApp</span>
+    </a>
+    <button class="dock-btn" id="shareNativeBtn" type="button">
+      <i class="fa-solid fa-share-nodes"></i>
+      <span>Compartir</span>
+    </button>
+  </aside>
+
+  <!-- QR Code & Share Modal -->
+  <div class="modal-backdrop" id="qrModal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-glass-container">
+      <button class="modal-close-btn" id="closeQrBtn" aria-label="Cerrar ventana">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <h3 id="modalTitle" style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: #fff;">
+        Escanear Tarjeta
+      </h3>
+      <p style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">
+        Apunta la cámara de tu teléfono para abrir esta tarjeta
+      </p>
+
+      <div class="qr-code-wrapper">
+        <div id="qrcode"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="action-card-btn primary-action" id="copyLinkModalBtn" type="button">
+          <i class="fa-solid fa-link"></i>
+          <span>Copiar Enlace Directo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast-notice" id="toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Acción completada con éxito</span>
+  </div>
+
+  <!-- Main JavaScript App Logic -->
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
